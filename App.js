@@ -5,7 +5,7 @@ import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React from 'react';
-import {HOME,Test} from './Screen/CustomNavigation';
+import {HOME,QuizTab} from './Screen/CustomNavigation';
 import prism from './Screen/Prism';
 import pyramid from './Screen/Pyramid';
 import cylinder from './Screen/Cylinder';
@@ -27,7 +27,7 @@ export default function App() {
           headerShown: false, tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="file-document-edit-outline" size={size} color={color} />
           ),
-        }} name='แบบสอบถาม' component={Test}></Tab.Screen>
+        }} name='แบบสอบถาม' component={QuizTab}></Tab.Screen>
       </Tab.Navigator>
     </NavigationContainer>
   );
