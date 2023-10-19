@@ -7,6 +7,7 @@ import Pyramid from './Pyramid';
 import Cylinder from './Cylinder';
 import Funnel from './Funnel';
 import Ball from './Ball';
+import Quiz from './Quiz';
 const Stack = createStackNavigator();  // creates object for Stack Navigator
 
 const HOME = () => {
@@ -42,31 +43,15 @@ const HOME = () => {
 
 export {HOME}
 
-const Test = () => {
+const QuizTab = () => {
     return (
         <Stack.Navigator >
             <Stack.Screen
-                name="Prism"
-                component={Prism}
-            />
-            <Stack.Screen
-                name="Pyramid"
-                component={Pyramid}
-            />
-            <Stack.Screen
-                name="Cylinder"
-                component={Cylinder}
-            />
-            <Stack.Screen
-                name="Funnel"
-                component={Funnel}
-            />
-            <Stack.Screen
-                name="Ball"
-                component={Ball}
+                name="Quiz"
+                component={Quiz}
             />
         </Stack.Navigator>
     )
 }
 
-export {Test}
+export {QuizTab}
